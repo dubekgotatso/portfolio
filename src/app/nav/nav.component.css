@@ -1,4 +1,3 @@
-
 .navbar {
     background-color: #E6FDFF; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -8,6 +7,14 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #697683; 
+  }
+  
+  .navbar-nav {
+    margin: 0 auto; /* Center the nav items */
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 15px; /* Add spacing between the items */
   }
   
   .navbar-nav .nav-link {
