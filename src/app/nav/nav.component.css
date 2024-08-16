@@ -1,6 +1,7 @@
 .navbar {
     background-color: #E6FDFF; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    
   }
   
   .navbar-brand {
@@ -43,11 +44,9 @@
   .navbar-toggler {
     border: none;
     outline: none;
+   border-color: #6c757d;
   }
   
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2880,80,80,0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E"); /* Custom icon color */
-  }
   
   .form-control {
     border: 1px solid #ced4da; 
@@ -68,3 +67,25 @@
     cursor: not-allowed;
   }
   
+
+  @media (max-width: 576px) {
+    .navbar-nav .nav-item {
+      width: 100%;
+    }
+  
+    .navbar-nav .dropdown-menu {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-nav .dropdown-menu .dropdown-item {
+      width: 100%;
+    }
+  }
+  
+  /* Optional: Make the navbar expand vertically on mobile for better visibility */
+  @media (max-width: 576px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  }
