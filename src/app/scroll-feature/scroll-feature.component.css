@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container Styles */
+.scrollspy-example {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Styles */
+.scrollspy-example h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+.scrollspy-example h3 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.scrollspy-example p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    align-self: flex-start;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .scrollspy-example {
+        padding: 15px;
+    }
+
+    .scrollspy-example h4 {
+        font-size: 20px;
+    }
+
+    .scrollspy-example h3 {
+        font-size: 24px;
+    }
+
+    .scrollspy-example p {
+        font-size: 16px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+  
