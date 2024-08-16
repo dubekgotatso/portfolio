@@ -10,7 +10,12 @@ import { Component } from '@angular/core';
 export class NavComponent {
 
   navigation_profile = [
-    'Logo', 'About', 'Skills','Contact','Projects'
+
+    'Home','Profile','Skills', 'Projects','Contact','About','Kgotatso',
   ]
 
 }
+
+
+}
+
