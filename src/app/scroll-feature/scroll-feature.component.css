@@ -1,45 +1,88 @@
+.hero {
+    background: url(.../.../../../../../assets/The\ Ultimate\ List\ of\ Best\ Free\ Tools\ &\ Resources\ for\ Front-End\ Web\ Developers.jpeg) no-repeat center center;
+    background-size: cover;
+    color: #0b0a0abd;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+  
+    .skill-card {
+        background-color: #626567;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 120px;
+        text-align: center;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+    }
+  
+        &:hover {
+            transform: translateY(-10px);
+        }
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #3d6e74;
+  
     text-align: center;
 }
 
-/* Container Styles */
-.scrollspy-example {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Navbar Styles */
+.navbar {
+    background-color: #007bfff5;
+    padding: 10px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* Section Styles */
-.scrollspy-example h4 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #007bff;
-    text-transform: uppercase;
-    border-bottom: 2px solid #007bff;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-top: 40px;
+.nav-pills .nav-link {
+    color: white;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
 }
 
-.scrollspy-example h3 {
+.nav-pills .nav-link:hover, .nav-pills .nav-link.active {
+    background-color: #0056b3;
+}
+
+
+
+h4 {
     font-size: 28px;
-    margin-top: 20px;
-    color: #333;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
-.scrollspy-example p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
+h3 {
+    font-size: 36px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #fff;
+    margin: 20px 0;
 }
 
 /* Form Styles */
@@ -47,33 +90,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin-right: 100px;
 }
 
 .contact-form label {
     font-size: 16px;
     margin: 10px 0 5px;
     align-self: flex-start;
+    color: #fff;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
 }
 
 .contact-form button {
-    padding: 10px 20px;
+    padding: 12px 30px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s;
 }
 
@@ -83,19 +127,19 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .scrollspy-example {
-        padding: 15px;
+    div[data-bs-spy="scroll"] > div {
+        padding: 20px;
     }
 
-    .scrollspy-example h4 {
-        font-size: 20px;
+    h4 {
+        font-size: 30px;
     }
 
-    .scrollspy-example h3 {
-        font-size: 24px;
+    h3 {
+        font-size: 28px;
     }
 
-    .scrollspy-example p {
+    p {
         font-size: 16px;
     }
 
@@ -104,4 +148,54 @@ body {
     }
 }
 
-  
+
+.home{
+    background-color: #3d6e74;
+    height: 700px;
+  padding-top:90px;
+  background-image: url("../../assets/The\ Ultimate\ List\ of\ Best\ Free\ Tools\ &\ Resources\ for\ Front-End\ Web\ Developers.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.About{
+    background-color: #3d6e74;
+    height: 400px;
+  padding-top:90px;
+background-color: #3d6e74;
+
+}
+
+.Skills{
+    background-color: #3d6e74;
+    height: 400px;
+  padding-top:90px;
+background-color: #3d6e74;
+}
+
+.Projects{
+    background-color: #3d6e74;
+    height: 700px;
+  padding-top:90px;
+background-color: #3d6e74;
+
+}
+
+.Contact{
+    background-color: #3d6e74;
+    height: 700px;
+  padding-top:90px;
+background-color: #3d6e74;
+
+}
+
+img{
+    margin-bottom: -630px;
+    margin-left: 800px;
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    border: 2px solid rgb(55, 55, 57);
+}
+
