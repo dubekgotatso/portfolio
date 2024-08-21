@@ -8,6 +8,76 @@
     margin-bottom: 100px;
 }
 
+/* Media query for devices with a max width of 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .Projects .container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align the items */
+    }
+
+    .Projects .row {
+        width: 100%; /* Make sure the row takes full width */
+        justify-content: center; /* Center the row content */
+    }
+
+    .Projects .col {
+        width: 100%; /* Make each column take full width on mobile */
+        margin-bottom: 20px; /* Add spacing between the cards */
+        display: flex;
+        justify-content: center; /* Center the cards */
+    }
+
+    .Projects .card {
+        width: 90%; /* Make the card width 90% of its container */
+        max-width: 400px; /* Increase max-width of the card to accommodate larger images */
+    }
+
+    .Projects .card-img-top {
+        width: 100%; /* Make the image take full width of the card */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .Projects .divbut {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align the buttons */
+    }
+
+    .Projects .divbut a {
+        width: 100%; /* Make buttons full-width on mobile */
+        margin-bottom: 10px; /* Add spacing between the buttons */
+    }
+}
+
+
+
+/* Media query for devices with a max width of 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .home .d-flex {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align the items */
+        text-align: center; /* Center-align the text */
+    }
+
+    .home img {
+display: none;
+    }
+
+    .home h1, .home h3, .home p {
+        margin-bottom: 15px; /* Add some spacing between elements */
+    }
+
+    .home .btn {
+        width: 100%; /* Make buttons full-width on mobile */
+    }
+
+    .home .d-flex.gap-2 {
+        flex-direction: column;
+    }
+}
+
+
 .skills-container {
     display: flex;
     justify-content: center;
@@ -125,60 +195,74 @@ p {
     background-color: #0056b3;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    div[data-bs-spy="scroll"] > div {
-        padding: 20px;
-    }
-
-    h4 {
-        font-size: 30px;
-    }
-
-    h3 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-}
 
 
 .home{
-    background-color: #3d6e74;
-    height: 700px;
-  padding-top:90px;
-  background-image: url("../../assets/The\ Ultimate\ List\ of\ Best\ Free\ Tools\ &\ Resources\ for\ Front-End\ Web\ Developers.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+background-color: #3d6e74;
+height: 700px;
+padding-top:90px;
+background-image: url("../../assets/The\ Ultimate\ List\ of\ Best\ Free\ Tools\ &\ Resources\ for\ Front-End\ Web\ Developers.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
 
 }
 
+.p{
+padding-left: 60px;
+padding-right: 60px;
+
+
+}
+
+.btn{
+  margin-left: 10px;
+}
+
+.divbut{
+    margin-top: 10px;
+}
+
+.card{
+box-shadow: #007bff;
+}
+
+.card-1{
+    color: #0a0b0b;
+font-size: small;
+}
+
+.card-2{
+    color: #0a0b0b;
+font-size: small;
+}
+
+.card-3{
+    color: #0a0b0b;
+font-size: small;
+}
+
+.texti{
+    text-align: center;
+}
 .About{
-    background-color: #3d6e74;
-    height: 400px;
-  padding-top:90px;
-background-color: #3d6e74;
+background-color: #14213d;
+padding-top:90px;
+color: #0a0b0b;
+height: 700px;
 
 }
 
 .Skills{
-    background-color: #3d6e74;
-    height: 400px;
-  padding-top:90px;
+background-color: #3d6e74;
+height: 400px;
+padding-top:90px;
 background-color: #3d6e74;
 }
 
 .Projects{
-    background-color: #3d6e74;
-    height: 700px;
-  padding-top:90px;
-background-color: #3d6e74;
+background-color: #1a759f;
+height: 700px;
+padding-top:90px;
 
 }
 
@@ -190,12 +274,30 @@ background-color: #3d6e74;
 
 }
 
-img{
+.social {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center icons */
+    gap: 15px; /* Space between icons */
+}
+
+.social a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 35px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+    border-radius: 100%;
+    border: 1 solid grey 20px;
+}
+
+.social a:hover {
+    color: #333; /* Maintain GitHub color on hover */
+}
+
+/* .img{
     margin-bottom: -630px;
     margin-left: 800px;
     width: 350px;
     height: 350px;
-    border-radius: 200px;
+    border-radius: 700px;
     border: 2px solid rgb(55, 55, 57);
-}
+}  */
 
