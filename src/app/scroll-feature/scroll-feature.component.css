@@ -155,45 +155,135 @@ p {
     margin: 20px 0;
 }
 
-/* Form Styles */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    margin-right: 100px;
-}
-
-.contact-form label {
-    font-size: 16px;
-    margin: 10px 0 5px;
-    align-self: flex-start;
-    color: #fff;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+.contact {
+    background-size: cover;
+    padding: 50px 20px;
+    background-color: #09d3ee;
     border-radius: 10px;
-    font-size: 16px;
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h4 {
+      font-size: 2rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  
+      .contact-info {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        h2 {
+          font-size: 1.8rem;
+          color: #333;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #666;
+          margin-bottom: 20px;
+        }
+  
+        .info-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+          font-size: 1rem;
+          color: #444;
+  
+          i {
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-right: 10px;
+          }
+  
+          span {
+            display: inline-block;
+          }
+  
+          a {
+            color: #007bff;
+            text-decoration: none;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+  
+      .contact-form-container {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        h2 {
+          font-size: 1.8rem;
+          color: #333;
+          margin-bottom: 15px;
+        }
+  
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+  
+          .form-group {
+            display: flex;
+            flex-direction: column;
+  
+            input, textarea {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              font-size: 1rem;
+              color: #333;
+              background-color: #fff;
+  
+              &:focus {
+                border-color: #f4e7c5;
+                outline: none;
+              }
+            }
+  
+            textarea {
+              resize: vertical;
+            }
+          }
+  
+          .btn {
+            align-self: flex-start;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0d73e8;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: #c5d4f4;
+            }
+          }
+        }
+      }
+    }
+  }
 
-.contact-form button {
-    padding: 12px 30px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #0056b3;
-}
 
 
 
@@ -278,6 +368,10 @@ background-color: #3d6e74;
     display: flex; /* Flexbox for social icons */
     justify-content: center; /* Center icons */
     gap: 15px; /* Space between icons */
+    margin-right: 863px;
+    margin-top: 35px;
+    
+    
 }
 
 .social a {
@@ -286,6 +380,7 @@ background-color: #3d6e74;
     transition: color 0.3s ease; /* Smooth color transition */
     border-radius: 100%;
     border: 1 solid grey 20px;
+    color: #ccc;
 }
 
 .social a:hover {
@@ -300,4 +395,17 @@ background-color: #3d6e74;
     border-radius: 700px;
     border: 2px solid rgb(55, 55, 57);
 }  */
+
+.github-icon {
+    color: #000000; /* Black color for GitHub */
+}
+
+.linkedin-icon {
+    color: #0a66c2; /* Blue color for LinkedIn */
+}
+
+.discord-icon {
+    color: #5865F2; /* Purple color for Discord */
+}
+
 

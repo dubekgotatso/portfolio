@@ -11,7 +11,7 @@ export class NavComponent {
 
   navigation_profile = [
 
-    'Home','About','Projects', 
+    'Home','About','Projects','Contacts' 
   ]
 
 }
