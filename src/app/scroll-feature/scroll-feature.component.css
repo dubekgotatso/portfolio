@@ -140,13 +140,19 @@ h1, h3, h5, p {
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
     .home {
-        flex-direction: column;
+  flex-direction: column;
         text-align: center;
+    }
+
+    .bu{
+        margin-right: 400px;
     }
 
     .home img {
         width: 200px;
-        margin-top: 20px;
+        margin-top: 120px;
+  
+  
     }
 
     .skills-container {
@@ -180,11 +186,16 @@ h1, h3, h5, p {
 @media screen and (max-width: 480px) {
     .header {
         font-size: 24px;
+        flex-direction: column;
     }
 
-    .p {
-        font-size: 16px;
+    p {
+        font-size: 19px;
+
     }
+
+
+
 
     .skill-card {
         width: 80px;
@@ -197,6 +208,11 @@ h1, h3, h5, p {
 
     .card-body p {
         font-size: 14px;
+    }
+
+    .home .btn{
+     position: absolute;
+
     }
 
     .contact-info, .contact-form-container {
@@ -304,3 +320,6 @@ h1, h3, h5, p {
 
 
 
+.slide-bck-left{animation:slide-bck-left 4s cubic-bezier(.755,.05,.855,.06) reverse both}
+
+ @keyframes slide-bck-left{0%{transform:translateZ(0) translateX(0)}100%{transform:translateZ(-400px) translateX(-200px)}}
