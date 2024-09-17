@@ -70,7 +70,9 @@ h1, h3, h5, p {
 .Projects {
     padding: 20px 0;
     background-color: #219ebc;
-    color: #fff;
+    color: #040303;
+    background-image: url(../../assets/vecteezy_grey-color-gradient-background-vector_26424839.jpg);
+   
 }
 
 .card {
@@ -97,6 +99,7 @@ h1, h3, h5, p {
     padding: 40px 20px;
     background-color: #8ecae6;
     color: #fff;
+    background-image: url(../../assets/Blue-08_generated.jpg);
 }
 
 .contact-container {
