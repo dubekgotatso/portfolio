@@ -42,16 +42,27 @@ h1, h3, h5, p {
 .p {
     font-size: 21px;
     margin-bottom: 20px;
+ 
 }
 
+.w{
+    color:#ffd60a;
+}
 .social {
     margin-top: 120px;
 }
 
+.tu{
+    color:#ffd60a;
+}
 .social a {
     margin: 0 10px;
     font-size: 24px;
    
+}
+.skill-card:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #ffd60a; /* Lighter color on hover */
 }
 
 
@@ -163,7 +174,11 @@ h1, h3, h5, p {
         align-items: center;
         background-color: #023047;
     }
-
+    .skill-card:hover {
+      
+        background-color: #f4f4f1; 
+    }
+    
     .card {
         width: 100%;
         max-width: 100%;
@@ -204,7 +219,12 @@ h1, h3, h5, p {
     .skill-card {
         width: 80px;
         height: 100px;
+   
+        transition: transform 0.3s ease, background-color 0.3s ease;
+
     }
+
+
 
     .skill-card img {
         width: 40px;
@@ -236,7 +256,7 @@ h1, h3, h5, p {
 
 /* About Section */
 .About {
-    background-color: #023047; /* Apply the background color to the About section */
+    background-color: #070C0A; /* Apply the background color to the About section */
     color: white; /* Set the text color to white for contrast */
     padding: 40px 20px;
     text-align: center;
@@ -248,7 +268,7 @@ h1, h3, h5, p {
 }
 
 .About p {
-    font-size: 16px;
+    font-size: 21px;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 30px; /* Center text and add margin for spacing */
@@ -261,7 +281,7 @@ h1, h3, h5, p {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    background-color: #023047; /* Same background color as About section */
+    background-color: #070C0A; /* Same background color as About section */
 }
 
 .skill-card {
@@ -293,7 +313,7 @@ h1, h3, h5, p {
 /* Responsiveness for About and Skills Section */
 @media screen and (max-width: 768px) {
     .About p {
-        font-size: 14px;
+        font-size: 20px;
         padding: 0 15px;
     }
 
@@ -340,3 +360,4 @@ h1, h3, h5, p {
 
 
 @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+
