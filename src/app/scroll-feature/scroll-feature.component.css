@@ -71,8 +71,8 @@ h1, h3, h5, p {
     padding: 20px 0;
     background-color: #219ebc;
     color: #040303;
-    background-image: url(../../assets/vecteezy_grey-color-gradient-background-vector_26424839.jpg);
-   
+    background-image: url('https://images.pexels.com/photos/92248/pexels-photo-92248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+object-fit: cover;
 }
 
 .card {
@@ -82,11 +82,34 @@ h1, h3, h5, p {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .card-body {
     text-align: center;
+    background-color: #000203;
+
 }
+
+
+.card-body h5 {
+
+
+ color: #ffd60a;
+
+}
+
+.bus{
+    color: #ffd60a;
+  border-color: #ffd60a;
+}
+.card-body p {
+
+
+    color: #fffffd;
+   margin-bottom: 20px;
+   margin-top: 10px;
+   }
 
 .divbut {
     display: flex;
@@ -171,12 +194,10 @@ h1, h3, h5, p {
   
   
     }
-
     .skills-container {
-        flex-direction: column;
-        align-items: center;
-        background-color: #023047;
+        grid-template-columns: 2fr 2fr; /* Two columns for larger screens */
     }
+
     .skill-card:hover {
       
         background-color: #f4f4f1; 
@@ -295,8 +316,6 @@ h1, h3, h5, p {
     border-radius: 10px;
     width: 120px;
     height: 150px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the cards */
@@ -320,9 +339,7 @@ h1, h3, h5, p {
         padding: 0 15px;
     }
 
-    .skills-container {
-        flex-direction: column;
-    }
+
 
     .skill-card {
         width: 100px;
@@ -363,4 +380,9 @@ h1, h3, h5, p {
 
 
 @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+
+
+
+
+
 
